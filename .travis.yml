@@ -17,7 +17,7 @@ install:
 before_script:
   - env | sort
   - cd "$VERSION"
-  - image="cassandra:$VERSION"
+  - image="spotx/cassandra:$VERSION"
   - |
     if [ -n "$ARCH" ]; then
         from="$(awk '$1 == toupper("FROM") { print $2 }' Dockerfile)"
