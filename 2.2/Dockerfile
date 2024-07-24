@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM debian:bullseye-20220711-slim
+FROM debian:bullseye-20240722-slim
 
 # explicitly set user/group IDs
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
